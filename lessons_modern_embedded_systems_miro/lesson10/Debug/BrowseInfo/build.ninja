@@ -1,0 +1,49 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = C$:\tools\IAR\common\bin\XclFileGenerator.exe $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$out
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = C$:\tools\IAR\common\bin\SourceIndexer.exe $flags
+  depfile = $out.dep
+  deps = gcc
+  description = IAR_NEW_TOOL+++INDEXER+++$out
+
+rule MAKEBROWSE
+  command = C$:\tools\IAR\common\bin\makeBrowseData.exe $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out
+
+rule PDBLINK
+  command = C$:\tools\IAR\common\bin\PbdLink.exe $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out
+
+
+
+#Build steps
+build D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\delay.xcl : COMPILER_XCL 
+    flags = "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson09\delay.c" -o "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config C$:\tools\IAR\arm\inc\c\DLib_Config_Normal.h -Ol --predef_macros "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\delay.tmp"
+    rspfile_name = D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\delay.xcl.rsp
+    xclcommand = -source_file "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson09\delay.c" -xcl_file "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\delay.xcl" -macro_file "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\delay.tmp" -icc_path C$:\tools\IAR\arm\bin\iccarm.exe
+
+build D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+    flags = "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\main.c" -o "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config C$:\tools\IAR\arm\inc\c\DLib_Config_Normal.h -Ol --predef_macros "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\main.tmp"
+    rspfile_name = D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\main.xcl.rsp
+    xclcommand = -source_file "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\main.c" -xcl_file "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\main.xcl" -macro_file "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\main.tmp" -icc_path C$:\tools\IAR\arm\bin\iccarm.exe
+
+build D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\delay.pbi : INDEXER D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\delay.xcl | D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson09\delay.c
+    flags = "-out=D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\delay.pbi" -f "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\delay.xcl"
+
+build D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\main.pbi : INDEXER D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\main.xcl | D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\main.c
+    flags = "-out=D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\main.pbi" -f "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\main.xcl"
+
+build D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\lesson10.pbw : MAKEBROWSE D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\lesson10.pbd
+    flags = "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\lesson10.pbd" -output "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\lesson10.pbw"
+
+build D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\lesson10.pbd : PDBLINK D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\delay.pbi | D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\main.pbi
+    flags = -M "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\lesson10.pbd" "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\delay.pbi" "D$:\E$ Drive\E$ drive\Embedded\modern_embedded_systems\my_work\lessons\lesson10\Debug\BrowseInfo\main.pbi"
+

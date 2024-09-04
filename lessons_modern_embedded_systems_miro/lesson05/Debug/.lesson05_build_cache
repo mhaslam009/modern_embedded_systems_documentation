@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildDb>
+    <Tool>
+        <Name>linker</Name>
+        <Parent>
+            <Path>D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson05\Debug\Exe\lesson05.out</Path>
+            <Output>
+                <Path>D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson05\Debug\List\lesson05.map</Path>
+            </Output>
+        </Parent>
+    </Tool>
+</BuildDb>

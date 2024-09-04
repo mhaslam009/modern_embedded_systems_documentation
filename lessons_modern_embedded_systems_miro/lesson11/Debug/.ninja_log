@@ -1,0 +1,25 @@
+# ninja log v5
+0	461	7466013809760077	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Obj/delay.o	1a264db74ff41b2f
+54	467	7466013809760077	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Obj/main.o	89333284f7767073
+473	602	7466013811265960	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Exe/lesson11.out	9b57a56a2bb93ff5
+93	163	7466014446433920	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Obj/main.o	89333284f7767073
+169	197	7466014446853550	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Exe/lesson11.out	9b57a56a2bb93ff5
+2	244	7466017087408875	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Obj/main.o	89333284f7767073
+252	286	7466017087877990	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Exe/lesson11.out	9b57a56a2bb93ff5
+0	74	7466018110904482	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Obj/main.o	89333284f7767073
+79	109	7466018111324752	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Exe/lesson11.out	9b57a56a2bb93ff5
+1	171	7466022484135421	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Obj/main.o	89333284f7767073
+180	209	7466022484546350	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Exe/lesson11.out	9b57a56a2bb93ff5
+1	63	7466023005491667	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Obj/delay.o	7d03367df3bf2
+6	102	7466023005858408	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Obj/main.o	eba46e6570436903
+108	137	7466023006276435	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Exe/lesson11.out	9b57a56a2bb93ff5
+1	70	7466023817904082	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Obj/main.o	eba46e6570436903
+72	103	7466023818244881	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Exe/lesson11.out	9b57a56a2bb93ff5
+1	169	7466028382887020	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Obj/main.o	eba46e6570436903
+172	204	7466028383403400	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Exe/lesson11.out	9b57a56a2bb93ff5
+1	155	7466029783125889	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Obj/main.o	eba46e6570436903
+159	201	7466029783622281	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Exe/lesson11.out	9b57a56a2bb93ff5
+1	165	7466037470619067	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Obj/main.o	eba46e6570436903
+171	207	7466037471043515	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Exe/lesson11.out	9b57a56a2bb93ff5
+1	215	7466102590783954	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Obj/main.o	eba46e6570436903
+216	306	7466102591758374	D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson11/Debug/Exe/lesson11.out	9b57a56a2bb93ff5

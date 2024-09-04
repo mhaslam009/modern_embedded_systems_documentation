@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\..\lesson04\lesson04.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\lesson05\lesson05.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\lesson06\lesson06.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\lesson07\lesson07.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\lesson08\lesson08.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\lesson09.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\lesson12\project.ewp</path>
+    </project>
+    <batchBuild />
+</workspace>

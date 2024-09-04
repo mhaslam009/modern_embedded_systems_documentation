@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildDb>
+    <Tool>
+        <Name>linker</Name>
+        <Parent>
+            <Path>D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson16\Debug\Exe\project.out</Path>
+            <Output>
+                <Path>D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson16\Debug\List\project.map</Path>
+            </Output>
+        </Parent>
+        <Parent>
+            <Path>D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson14\Debug\Exe\project.out</Path>
+            <Output>
+                <Path>D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson14\Debug\List\project.map</Path>
+            </Output>
+        </Parent>
+        <Parent>
+            <Path>D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson17\Debug\Exe\project.out</Path>
+            <Output>
+                <Path>D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson17\Debug\List\project.map</Path>
+            </Output>
+        </Parent>
+        <Parent>
+            <Path>D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson12\Debug\Exe\project.out</Path>
+            <Output>
+                <Path>D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson12\Debug\List\project.map</Path>
+            </Output>
+        </Parent>
+        <Parent>
+            <Path>D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson15\Debug\Exe\project.out</Path>
+            <Output>
+                <Path>D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson15\Debug\List\project.map</Path>
+            </Output>
+        </Parent>
+        <Parent>
+            <Path>D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson13\Debug\Exe\project.out</Path>
+            <Output>
+                <Path>D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson13\Debug\List\project.map</Path>
+            </Output>
+        </Parent>
+    </Tool>
+</BuildDb>

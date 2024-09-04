@@ -1,0 +1,117 @@
+!SESSION 2024-08-29 14:26:44.870 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.20.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson09
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2024-08-29 14:26:59.518
+!MESSAGE Using CMSIS pack repositories: http://links.iar.com/cmsis/pack/
+
+!ENTRY com.iar.cmsismanager.product 1 0 2024-08-29 14:27:00.498
+!MESSAGE CMSIS Agent interface registered with service registry at ServiceLocation(host:\\.\pipe\iar-cspy-cpp-binary-com.iar.thrift.service.registry-e997c825-4ca9-4c31-85f0-5db52f8ea1dd-1, port:0, protocol:Binary, transport:Pipe)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-08-29 14:28:44.646
+!MESSAGE An internal error occurred during: "Refresh packs from web".
+!STACK 0
+java.lang.NullPointerException
+	at com.arm.cmsis.pack.preferences.CpPreferenceInitializer.writeUpdateFile(CpPreferenceInitializer.java:334)
+	at com.arm.cmsis.pack.preferences.CpPreferenceInitializer.updateLastUpdateTime(CpPreferenceInitializer.java:285)
+	at com.arm.cmsis.pack.installer.CpPackInstaller.updatePacks(CpPackInstaller.java:609)
+	at com.arm.cmsis.pack.installer.CpPackInstaller.updatePacks(CpPackInstaller.java:447)
+	at com.arm.cmsis.pack.installer.jobs.CpUpdatePacksJob.run(CpUpdatePacksJob.java:33)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-08-29 14:29:47.374 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.20.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson09
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2024-08-29 14:29:51.427
+!MESSAGE Using CMSIS pack repositories: http://links.iar.com/cmsis/pack/
+
+!ENTRY com.iar.cmsismanager.product 1 0 2024-08-29 14:29:55.517
+!MESSAGE CMSIS Agent interface registered with service registry at ServiceLocation(host:\\.\pipe\iar-cspy-cpp-binary-com.iar.thrift.service.registry-e997c825-4ca9-4c31-85f0-5db52f8ea1dd-1, port:0, protocol:Binary, transport:Pipe)
+
+!ENTRY org.eclipse.core.expressions 4 201 2024-08-29 14:30:36.427
+!MESSAGE No property tester contributes a property com.arm.cmsis.pack.project.property.rteFile to type class com.arm.cmsis.pack.rte.boards.RteBoardItem
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property com.arm.cmsis.pack.project.property.rteFile to type class com.arm.cmsis.pack.rte.boards.RteBoardItem
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:131)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:104)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.failsEnablement(RegistryPageContributor.java:284)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.isApplicableTo(RegistryPageContributor.java:227)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.contribute(PropertyPageContributorManager.java:114)
+	at org.eclipse.ui.internal.quickaccess.providers.PropertiesProvider.getElements(PropertiesProvider.java:58)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessProvider.getElementsSorted(QuickAccessProvider.java:83)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessContents$3.runInUIThread(QuickAccessContents.java:397)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1041)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2024-08-29 14:30:36.427
+!MESSAGE No property tester contributes a property com.arm.cmsis.pack.project.property.rteFile to type class com.arm.cmsis.pack.rte.boards.RteBoardItem
+
+!ENTRY org.eclipse.core.expressions 4 201 2024-08-29 14:31:12.142
+!MESSAGE No property tester contributes a property com.arm.cmsis.pack.project.property.rteFile to type class com.arm.cmsis.pack.rte.boards.RteBoardItem
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property com.arm.cmsis.pack.project.property.rteFile to type class com.arm.cmsis.pack.rte.boards.RteBoardItem
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:131)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:104)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.failsEnablement(RegistryPageContributor.java:284)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.isApplicableTo(RegistryPageContributor.java:227)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.contribute(PropertyPageContributorManager.java:114)
+	at org.eclipse.ui.internal.quickaccess.providers.PropertiesProvider.getElements(PropertiesProvider.java:58)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessProvider.getElementsSorted(QuickAccessProvider.java:83)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessContents$3.runInUIThread(QuickAccessContents.java:397)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1041)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2024-08-29 14:31:12.142
+!MESSAGE No property tester contributes a property com.arm.cmsis.pack.project.property.rteFile to type class com.arm.cmsis.pack.rte.boards.RteBoardItem
