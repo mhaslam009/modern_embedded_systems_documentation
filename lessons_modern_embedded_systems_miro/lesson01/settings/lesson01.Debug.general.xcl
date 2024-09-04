@@ -1,0 +1,13 @@
+"C:\tools\IAR\arm\bin\armPROC.dll" 
+
+"C:\tools\IAR\arm\bin\armSIM2.dll" 
+
+"D:\E Drive\E drive\Embedded\modern_embedded_systems\my_work\lessons\lesson01\Debug\Exe\lesson01.out" 
+
+--plugin="C:\tools\IAR\arm\bin\armLibSupportUniversal.dll" 
+
+--device_macro="C:\tools\IAR\arm/config/debugger/TexasInstruments/LM4F.dmac" 
+
+
+
+
